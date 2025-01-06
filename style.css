@@ -55,6 +55,10 @@ body {
   color: var(--farve4);
 }
 
+.lightmode footer h2 {
+  color: var(--farve5);
+}
+
 #ommig {
   margin: 0 3rem 0 3rem;
   padding: 0 1rem 1rem 1rem;
@@ -435,7 +439,8 @@ header {
 }
 
 /* Arbejde */
-#arbejde {
+.arbejdeoverskrift {
+  text-align: center;
   margin: 5rem 0rem 5rem 0rem;
 }
 .temaer {
@@ -541,6 +546,10 @@ footer h2 {
     font-size: 1.6875rem; /* 27px */
   }
 
+  .image-container h2 {
+    font-size: 3rem;
+  }
+
   /* OM MIG */
   .grid_1-1 {
     grid-template-columns: 1fr 1fr; /* 2 kolonner, én til tekst og én til billede */
@@ -558,10 +567,10 @@ footer h2 {
 
   /* ARBEJDE */
   /* Temavenstre */
-  .temavenstre {
+  .temavenstre,
+  .temahojre {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
   }
 
   .temavenstre h3,
@@ -579,12 +588,15 @@ footer h2 {
     grid-row: 3;
   }
 
-  /* temahøjre */
-  .temahojre {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  #forste {
+    grid-row: 3;
   }
 
+  #anden {
+    grid-row: 4;
+  }
+
+  /* temahøjre */
   .temahojre h3,
   .temahojre h4 {
     grid-column: 1;
@@ -596,5 +608,14 @@ footer h2 {
   }
   .temahojre .image-container {
     grid-column: 1;
+  }
+
+  #switch {
+    width: 15%;
+  }
+
+  .kodetext {
+    top: 10%;
+    left: -55%;
   }
 }
