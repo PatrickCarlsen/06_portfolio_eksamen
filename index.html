@@ -8,14 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pompiere&family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="/IMGS/favicon 16x16.svg">
+    <link rel="icon" type="image/x-icon" href="IMGS/favicon16x16.svg" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <h6 class="logotop">Patrick Carlsen<br />multimediedesigner</h6>
+        <a href="index.html#velkommen">
+          <h6 class="logotop">Patrick Carlsen<br />multimediedesigner</h6>
+        </a>
       </div>
-      <img id="switch" src="IMGS/darkbutton.svg" alt="Skift Tema">
+      <img id="switch" src="IMGS/darkbutton.svg" alt="Skift Tema" />
       <nav>
         <ul class="menu">
           <li><a href="#velkommen">Velkommen</a></li>
@@ -25,43 +27,29 @@
       </nav>
     </header>
     <main>
-        <section id="velkommen">
-            <div class="hero">
-              <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-              <dotlottie-player 
-                src="https://lottie.host/4b18d9bd-ab45-4614-9a6d-114e09073bcf/vrVjeOtKQD.lottie" 
-                background="transparent" 
-                speed="1" 
-                style="width: 100%; height: 100%;" 
-                loop 
-                autoplay>
-              </dotlottie-player>
-            </div>
-            <h4 id="ide">Alt starter med en idé</h4>
-            <h3 id="ide2">
-              Her finder du alt, der definerer mig – mine projekter, passioner og den rejse, der har formet mig som skaber. 
-              Men før vi dykker ned i detaljerne, så lad os starte med det vigtigste spørgsmål:
-            </h3>
-          </section>
-          <section id="ommig">
-            <div class="grid_1-1">
-              <h1>
-                Hvem er <br />
-                <span class="orange">Patrick Carlsen</span> <br />
-                egentlig?
-              </h1>
-              <img src="IMGS/ommigbillede.webp" alt="Billede af Patrick og hans kæreste i sort/hvid" />
-              <p>
-                Lad os starte med navnet: Carlsen, Patrick Carlsen. <br /><br />
-                Jeg er en smilende, åben og udadvendt person, der trives i alle slags miljøer. 
-                Jeg er en kameleon, både i sociale og faglige kontekster, og med mine 21 års erfaring som menneske har jeg lært, hvordan jeg bedst kan lide livet. <br /><br />
-                Jeg er ekstremt nysgerrig og vil altid hellere stille ét spørgsmål for meget end ét for lidt. 
-                Jeg er en perfektionist i alt, hvad jeg laver, og stræber altid efter at blive klogere og blive en lidt bedre udgave af mig selv i dag, end jeg var i går. <br /><br />
-                Uanset om det handler om computerspil, styrketræning, skole eller arbejde, giver jeg altid 110% og sigter efter at blive nummer ét.
-              </p>
-            </div>
-      
-    
+      <section id="velkommen">
+        <div class="hero">
+          <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+          <dotlottie-player src="https://lottie.host/4b18d9bd-ab45-4614-9a6d-114e09073bcf/vrVjeOtKQD.lottie" background="transparent" speed="1" style="width: 100%; height: 100%" autoplay> </dotlottie-player>
+        </div>
+        <h4 id="ide">Alt starter med en idé</h4>
+        <h3 id="ide2">Her finder du alt, der definerer mig – mine projekter, passioner og den rejse, der har formet mig som skaber. Men før vi dykker ned i detaljerne, så lad os starte med det vigtigste spørgsmål:</h3>
+      </section>
+      <section id="ommig">
+        <div class="grid_1-1">
+          <h1>
+            Hvem er <br />
+            <span class="orange">Patrick Carlsen</span> <br />
+            egentlig?
+          </h1>
+          <img src="IMGS/ommigbillede.webp" alt="Billede af Patrick og hans kæreste i sort/hvid" />
+          <p>
+            Lad os starte med navnet: Carlsen, Patrick Carlsen. <br /><br />
+            Jeg er en smilende, åben og udadvendt person, der trives i alle slags miljøer. Jeg er en kameleon, både i sociale og faglige kontekster, og med mine 21 års erfaring som menneske har jeg lært, hvordan jeg bedst kan lide livet. <br /><br />
+            Jeg er ekstremt nysgerrig og vil altid hellere stille ét spørgsmål for meget end ét for lidt. Jeg er en perfektionist i alt, hvad jeg laver, og stræber altid efter at blive klogere og blive en lidt bedre udgave af mig selv i dag, end jeg var i går. <br /><br />
+            Uanset om det handler om computerspil, styrketræning, skole eller arbejde, giver jeg altid 110% og sigter efter at blive nummer ét.
+          </p>
+        </div>
         <!-- Værktøjskassen -->
         <h4 class="toolboxoverskrift">Min værktøjskasse</h4>
         <div class="toolbox_1-1">
@@ -96,7 +84,7 @@
         </div>
         <h4 id="rejsen">“Jeg ser min rejse som en konstant udvikling – en række skridt frem mod noget, jeg stadig opdager undervejs.”</h4>
         <div class="cv_1-1-1">
-            <!-- Erfaring -->
+          <!-- Erfaring -->
           <div class="efliste">
             <h4>ERHVERVSERFARING</h4>
             <div class="ef">
@@ -105,23 +93,19 @@
             </div>
             <div class="ef">
               <h6>29/04/2024 - 16/08/2024</h6>
-              <h5>LEPO, Slageriarbejder</h5>
+              <h5>LEPO, Slagteriarbejder</h5>
             </div>
             <div class="ef">
               <h6>19/04/2023 - Nu</h6>
-              <h5>Lifeclub, receptionist</h5>
+              <h5>Lifeclub, Receptionist</h5>
             </div>
             <div class="ef">
               <h6>20/02/2023 - 28/02/2023</h6>
-              <h5>Copenhagen sales, telemarketing</h5>
+              <h5>Copenhagen Sales, Telemarketing</h5>
             </div>
             <div class="ef">
               <h6>14/06/2021 - 28/02/2023</h6>
-              <h5>executive group, lagermedarbejder</h5>
-            </div>
-            <div class="ef">
-              <h6>14/06/2021 - 28/02/2023</h6>
-              <h5>executive group, lagermedarbejder</h5>
+              <h5>Executive Group, Lagermedarbejder</h5>
             </div>
             <div class="ef">
               <h6>15/01/2020 - 11/03/2021</h6>
@@ -130,14 +114,14 @@
           </div>
           <!-- Pil -->
           <svg width="80" height="800" viewBox="0 0 12 314" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path id="pil" d="M6.00001 0L0.226511 10L11.7735 10L6.00001 0ZM7 314L7.00001 9L5.00001 9L5 314L7 314Z" fill="white"/>
+            <path id="pil" d="M6.00001 0L0.226511 10L11.7735 10L6.00001 0ZM7 314L7.00001 9L5.00001 9L5 314L7 314Z" fill="white" />
           </svg>
           <!-- Uddannelser -->
           <div class="udliste">
             <h4>UDDANNELSER</h4>
             <div class="ud">
               <h6>26/08/2024 - 30/06/2026</h6>
-              <h5>Københavnserhvervsakademi - multimediedesginer</h5>
+              <h5>Københavns Erhvervsakademi - multimediedesginer</h5>
             </div>
 
             <div class="ud">
@@ -147,161 +131,158 @@
 
             <div class="ud">
               <h6>08/08/2009 - 02/06/2019</h6>
-              <h5>Tjørnegårdskolen</h5>
+              <h5>Tjørnegårdsskolen</h5>
             </div>
           </div>
         </div>
-    </section>
-        <h2 class="arbejdeoverskrift">En <span class="orange">hobby</span>, jeg håber at kunne gøre til mit <span class="orange">arbejde</span></h2>
-        <section id="arbejde">
-            <div class="temaer">
-              <!-- Tema 1 -->
-              <div class="tema temavenstre">
-                <h3>Introugen</h3>
-                <h4>TEMA 1</h4>
-                <p>
-                  I introugen blev jeg introduceret til alt det, vi skulle igennem de næste to år som multimediedesignere. Jeg lærte om de forskellige fagområder, og hvad de rent faktisk indeholder. 
-                  <br><br>
-                  Jeg blev også introduceret til de mange forskellige roller, man kan arbejde med som multimediedesigner, samt hvilke virksomhedstyper der ansætter inden for branchen.
-                  <br><br>
-                  Introugen havde desuden stort fokus på, at jeg blev introduceret til mine medstuderende, undervisere og skolens faciliteter.
-                  <br><br>
-                  I introugen fik jeg bekræftet, at det var det helt rigtige valg for mig at tage en multimediedesigneruddannelse på KEA!
-                </p>
-                <div class="image-container">
-                  <img class="introuge" src="IMGS/introuge_result.webp" alt="Billede af min computer fra en af de første skoledage">
-                </div>
-              </div>
-          
-              <!-- Tema 2 -->
-              <div class="tema temahojre">
-                <h3>WEB</h3>
-                <h4>TEMA 2</h4>
-                <p>
-                    I tema 2 tog jeg de første skridt ind i hverdagen på uddannelsen. I dette tema lærte jeg det grundlæggende indenfor digtale brugergrænseflader, indholdsproduktion og digital kommunikation. Jeg lærte at bygge responsive websites, ved hjælp af HTML og lidt CSS igennem en “mobile first”-tilgang. <br><br>
-
-                    Jeg blev introduceret til flere designpricipper, konventioner og jeg fik taget en temperatur på hvilket workflow man skal igennem for at komme fra start til slut. <br><br>
-                    
-                    Heriblandt arbejdede jeg i figma, hvor jeg fik prøvet krafter med gestaltlove, wireframes og styletiles, samt grundlæggende billedbehandling. <br><br>
-                    
-                    Tema 2 sluttede med studiestartsprøven, hvor jeg skabte et fuldt fungerende responsivt website, som udgjorde min første webproduktion. <br><br>
-                    
-                    Klik på billedet for at se projektet!
-                    
-                </p>
-                <div class="image-container">
-                  <a href="https://carlsendesigns.dk/kea/02_web/01_website/website_med_integration_fra_codepen/index.html">
-                    <img src="IMGS/website_result.webp" alt="Billede af forsiden på min første hjemmeside">
-                    <div class="overlay-text">
-                      <h2>website</h2>
-                    </div>
-                  </a>
-                </div>
-                <div class="image-container">
-                  <a href="https://carlsendesigns.dk/kea/02_web/01_website/mobilsite/index.html">
-                    <img src="IMGS/mobilsite_result.webp" alt="Billede af min første responsive hjemmeside">
-                    <div class="overlay-text">
-                      <h2>mobilsite</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-          
-              <!-- Tema 3 -->
-              <div class="tema temavenstre">
-                <h3>UX/UI</h3>
-                <h4>TEMA 3</h4>
-                <p>
-                    I tema 3 udviklede jeg et emnesite. Jeg lærte at få tømt hovedet for idéer og starte helt fra bunden. <br><br>
-
-                    Jeg blev introduceret til grundlæggende UX/UI-konventioner, metoder og teorier, som gav mig en dybere forståelse for samspillet mellem brugere og brugergrænseflader. Jeg fik en række værktøjer, teorier og metoder, som jeg kunne bruge til research, design og test under udviklingen af digitale produkter. <br><br>
-                    
-                    Jeg lærte at træffe designvalg baseret på relevante og repræsentative tests, hvor jeg fik reelle indsigter fra brugerne. <br><br>
-                    
-                    Ved afslutningen af tema 3 stod jeg med et færdigt emnesite. <br><br>
-                    
-                    Klik på billedet for at se projektet! 
-                </p>
-                <div class="image-container">
-                  <a href="https://carlsendesigns.dk/kea/03_ux:ui/01_kodet_site/forside.html">
-                    <img class="emnesite" src="IMGS/emnesite_result.webp" alt="Billede af forsiden på mit emnesite, der omhandlede eastereggs i animationsfilm">
-                    <div class="overlay-text">
-                      <h2>emnesite</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Tema 4 -->
-              <div class="tema temahojre">
-                <h3>ANIMATION</h3>
-                <h4>TEMA 4</h4>
-                <p>
-                    I dette tema blev jeg introduceret til animation gennem JavaScript og CSS. Jeg byggede videre på min viden fra tema 3 om UX/UI og skabte et interaktivt spil med animerede illustrationer. Spillet er et simpelt klik-spil, hvor brugeren optjener point eller mister liv baseret på brugerens interaktion. <br><br>
-
-                    Jeg har desuden opnået færdigheder i at bruge aktivitets- og statemachinediagrammer til at planlægge flowet. <br><br>
-                    
-                    Jeg blev introduceret til Adobe Illustrator, hvor jeg udarbejdede alt det visuelle, som sitet indeholder – alt fra UI-komponenter til baggrundselementer og score-/timeboards. <br><br>
-                    
-                    Jeg har også arbejdet med lydbehandling og lydintegration og opnået færdigheder i at styre dette gennem JavaScript. <br><br>
-                    
-                    Klik på billedet for at se projektet!
-                    
-                    
-                </p>
-                <div class="image-container">
-                  <a href="https://carlsendesigns.dk/kea/04_animation/website/spil.html">
-                    <img class="animation" src="IMGS/animation_result.webp" alt="Billede af forsiden på mit spil, der handlede om Red Bull Symphonic">
-                    <div class="overlay-text">
-                      <h2>animation</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
-          
-              <!-- Tema 5 -->
-              <div class="tema temavenstre">
-                <h3>INDHOLD</h3>
-                <h4>TEMA 5</h4>
-                <p>
-                    Tema 5 handlede om indholdsproduktion, hvor vi udviklede både et passionssite og et virksomhedssite. Vi arbejdede gennem alle produktionsstadier: præproduktion, produktion og postproduktion. Her fik jeg erfaring med brug af kamera, mikrofoner og belysning. <br><br>
-
-                    I præproduktionen lærte jeg at planlægge og udarbejde storyboards. Under produktionen blev jeg bedre til at bruge storyboards som rettesnor, samtidig med at tænke kreativt og finde løsninger, hvis planen måtte ændres. <br><br>
-                    
-                    I postproduktionen fik jeg erfaring med color grading og videoredigering i Premiere Pro samt lydredigering i Audition. Derudover arbejdede jeg med animeret vektorgrafik (Lottiefiles) i Adobe After Effects. <br><br>
-                    
-                    Klik på billedet for at se projektet! <br><br>
-                </p>
-                <div id="forste"class="image-container">
-                  <a href="https://carlsendesigns.dk/kea/05_grundl%C3%A6ggende_indhold/passionssite/index.html">
-                    <img src="IMGS/passionssite_result.webp" alt="Forsiden af min passionssite">
-                    <div class="overlay-text">
-                      <h2>passionssite</h2>
-                    </div>
-                  </a>
-                </div>
-                <div id="anden" class="image-container">
-                  <a href="https://carlsendesigns.dk/kea/05_grundl%C3%A6ggende_indhold/virksomhedssite/index.html">
-                    <img src="IMGS/virksomhedssite_result.webp" alt="Forsiden af vores virksomhedssite">
-                    <div class="overlay-text">
-                      <h2>virksomhedssite</h2>
-                    </div>
-                  </a>
-                </div>
-              </div>
+      </section>
+      <h2 class="arbejdeoverskrift">En <span class="orange">hobby</span>, jeg håber at kunne gøre til mit <span class="orange">arbejde</span></h2>
+      <section id="arbejde">
+        <div class="temaer">
+          <!-- Tema 1 -->
+          <div class="tema temavenstre">
+            <h3>Introugen</h3>
+            <h4>TEMA 1</h4>
+            <p>
+              I introugen blev jeg introduceret til alt det, vi skulle igennem de næste to år som multimediedesignere. Jeg lærte om de forskellige fagområder, og hvad de rent faktisk indeholder.
+              <br /><br />
+              Jeg blev også introduceret til de mange forskellige roller, man kan arbejde med som multimediedesigner, samt hvilke virksomhedstyper der ansætter inden for branchen.
+              <br /><br />
+              Introugen havde desuden stort fokus på, at jeg blev introduceret til mine medstuderende, undervisere og skolens faciliteter.
+              <br /><br />
+              I introugen fik jeg bekræftet, at det var det helt rigtige valg for mig at tage en multimediedesigneruddannelse på KEA!
+            </p>
+            <div class="image-container">
+              <img class="introuge" src="IMGS/introuge_result.webp" alt="Billede af min computer fra en af de første skoledage" />
             </div>
-          </section>
-        </main>
+          </div>
+
+          <!-- Tema 2 -->
+          <div class="tema temahojre">
+            <h3>WEB</h3>
+            <h4>TEMA 2</h4>
+            <p>
+              I tema 2 tog jeg de første skridt ind i hverdagen på uddannelsen. I dette tema lærte jeg det grundlæggende indenfor digtale brugergrænseflader, indholdsproduktion og digital kommunikation. Jeg lærte at bygge responsive websites, ved hjælp af HTML og lidt CSS igennem en “mobile first”-tilgang. <br /><br />
+
+              Jeg blev introduceret til flere designpricipper, konventioner og jeg fik taget en temperatur på hvilket workflow man skal igennem for at komme fra start til slut. <br /><br />
+
+              Heriblandt arbejdede jeg i figma, hvor jeg fik prøvet krafter med gestaltlove, wireframes og styletiles, samt grundlæggende billedbehandling. <br /><br />
+
+              Tema 2 sluttede med studiestartsprøven, hvor jeg skabte et fuldt fungerende responsivt website, som udgjorde min første webproduktion. <br /><br />
+
+              Klik på billedet for at se projektet!
+            </p>
+            <div class="image-container">
+              <a href="https://carlsendesigns.dk/kea/02_web/01_website/website_med_integration_fra_codepen/index.html">
+                <img src="IMGS/website_result.webp" alt="Billede af forsiden på min første hjemmeside" />
+                <div class="overlay-text">
+                  <h2>website</h2>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="https://carlsendesigns.dk/kea/02_web/01_website/mobilsite/index.html">
+                <img src="IMGS/mobilsite_result.webp" alt="Billede af min første responsive hjemmeside" />
+                <div class="overlay-text">
+                  <h2>mobilsite</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tema 3 -->
+          <div class="tema temavenstre">
+            <h3>UX/UI</h3>
+            <h4>TEMA 3</h4>
+            <p>
+              I tema 3 udviklede jeg et emnesite. Jeg lærte at få tømt hovedet for idéer og starte helt fra bunden. <br /><br />
+
+              Jeg blev introduceret til grundlæggende UX/UI-konventioner, metoder og teorier, som gav mig en dybere forståelse for samspillet mellem brugere og brugergrænseflader. Jeg fik en række værktøjer, teorier og metoder, som jeg kunne bruge til research, design og test under udviklingen af digitale produkter. <br /><br />
+
+              Jeg lærte at træffe designvalg baseret på relevante og repræsentative tests, hvor jeg fik reelle indsigter fra brugerne. <br /><br />
+
+              Ved afslutningen af tema 3 stod jeg med et færdigt emnesite. <br /><br />
+
+              Klik på billedet for at se projektet!
+            </p>
+            <div class="image-container">
+              <a href="https://carlsendesigns.dk/kea/03_ux:ui/01_kodet_site/forside.html">
+                <img class="emnesite" src="IMGS/emnesite_result.webp" alt="Billede af forsiden på mit emnesite, der omhandlede eastereggs i animationsfilm" />
+                <div class="overlay-text">
+                  <h2>emnesite</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tema 4 -->
+          <div class="tema temahojre">
+            <h3>ANIMATION</h3>
+            <h4>TEMA 4</h4>
+            <p>
+              I dette tema blev jeg introduceret til animation gennem JavaScript og CSS. Jeg byggede videre på min viden fra tema 3 om UX/UI og skabte et interaktivt spil med animerede illustrationer. Spillet er et simpelt klik-spil, hvor brugeren optjener point eller mister liv baseret på brugerens interaktion. <br /><br />
+
+              Jeg har desuden opnået færdigheder i at bruge aktivitets- og statemachinediagrammer til at planlægge flowet. <br /><br />
+
+              Jeg blev introduceret til Adobe Illustrator, hvor jeg udarbejdede alt det visuelle, som sitet indeholder – alt fra UI-komponenter til baggrundselementer og score-/timeboards. <br /><br />
+
+              Jeg har også arbejdet med lydbehandling og lydintegration og opnået færdigheder i at styre dette gennem JavaScript. <br /><br />
+
+              Klik på billedet for at se projektet!
+            </p>
+            <div class="image-container">
+              <a href="https://carlsendesigns.dk/kea/04_animation/website/spil.html">
+                <img class="animation" src="IMGS/animation_result.webp" alt="Billede af forsiden på mit spil, der handlede om Red Bull Symphonic" />
+                <div class="overlay-text">
+                  <h2>animation</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tema 5 -->
+          <div class="tema temavenstre">
+            <h3>INDHOLD</h3>
+            <h4>TEMA 5</h4>
+            <p>
+              Tema 5 handlede om indholdsproduktion, hvor vi udviklede både et passionssite og et virksomhedssite. Vi arbejdede gennem alle produktionsstadier: præproduktion, produktion og postproduktion. Her fik jeg erfaring med brug af kamera, mikrofoner og belysning. <br /><br />
+
+              I præproduktionen lærte jeg at planlægge og udarbejde storyboards. Under produktionen blev jeg bedre til at bruge storyboards som rettesnor, samtidig med at tænke kreativt og finde løsninger, hvis planen måtte ændres. <br /><br />
+
+              I postproduktionen fik jeg erfaring med color grading og videoredigering i Premiere Pro samt lydredigering i Audition. Derudover arbejdede jeg med animeret vektorgrafik (Lottiefiles) i Adobe After Effects. <br /><br />
+
+              Klik på billedet for at se projektet! <br /><br />
+            </p>
+            <div id="forste" class="image-container">
+              <a href="https://carlsendesigns.dk/kea/05_grundl%C3%A6ggende_indhold/passionssite/index.html">
+                <img src="IMGS/passionssite_result.webp" alt="Forsiden af min passionssite" />
+                <div class="overlay-text">
+                  <h2>passionssite</h2>
+                </div>
+              </a>
+            </div>
+            <div id="anden" class="image-container">
+              <a href="https://carlsendesigns.dk/kea/05_grundl%C3%A6ggende_indhold/virksomhedssite/index.html">
+                <img src="IMGS/virksomhedssite_result.webp" alt="Forsiden af vores virksomhedssite" />
+                <div class="overlay-text">
+                  <h2>virksomhedssite</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <h2>LIKE WHAT YOU SEE?</h2>
       <h3>eller har du bare nogle spørgsmål, så kontakt mig!</h3>
       <div class="footergrid_1-1-1">
         <a href="https://www.linkedin.com/in/patrick-carlsen-519542264/">LinkedIn</a>
         <a href="https://www.instagram.com/patrickcarlsennn/">Instagram</a>
-        <h5>Mail: paca0001@stud.kea.dk</h4>
+        <h5>Mail: paca0001@stud.kea.dk</h5>
         <a href="https://www.facebook.com/PatrickCarlsennn/">Facebook</a>
         <a href="socials.html">Snapchat</a>
-        <h5>TLF: +45 91 85 33 84</h4>
+        <h5>TLF: +45 91 85 33 84</h5>
       </div>
     </footer>
     <script src="javascript.js"></script>
