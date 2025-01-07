@@ -23,6 +23,7 @@ html {
   --kanter: 3rem;
   --transitionslow: ease-in 0.3s;
   --transitionfast: ease-in-out 0.1s;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,6 +44,10 @@ body {
 .lightmode p,
 .lightmode a {
   color: var(--farve1);
+}
+
+.lightmode #pil {
+  fill: var(--farve1);
 }
 
 .lightmode #ommig {
@@ -159,7 +164,7 @@ header {
 #switch {
   width: 50%;
   text-align: center;
-  margin-top: 0 auto;
+  margin-top: 0;
   width: 20%;
   height: 0%;
   cursor: pointer;
@@ -209,7 +214,6 @@ header {
 
 .grid_1-1 img {
   width: 100%;
-
   border-radius: var(--kanter);
   margin: auto;
   grid-column: 2;
@@ -266,7 +270,7 @@ header {
   text-align: center;
   border-radius: 6px;
   padding: 0.2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   top: 100%;
   left: 20%;
   position: absolute;
@@ -308,10 +312,10 @@ header {
   text-align: center;
   border-radius: 6px;
   padding: 0.2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   /* Placering af kassen */
   top: 100%;
-  left: -90%;
+  left: -100%;
   position: absolute;
   z-index: 10;
   cursor: auto;
@@ -354,7 +358,7 @@ header {
   text-align: center;
   border-radius: 6px;
   padding: 0.2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   top: -110%;
   left: 10%;
   position: absolute;
@@ -397,9 +401,9 @@ header {
   text-align: center;
   border-radius: 6px;
   padding: 0.2rem;
-  font-size: 2rem;
-  top: 10%;
-  left: -100%;
+  font-size: 1.5rem;
+  top: 0%;
+  left: -140%;
   position: absolute;
   z-index: 10;
   cursor: auto;
@@ -420,8 +424,7 @@ header {
   grid-template-columns: 1fr auto 1fr;
 }
 
-.cv_1-1-1 img {
-  width: 60%;
+.cv_1-1-1 #pil {
   margin: 0 1rem;
   place-self: center;
 }
@@ -456,15 +459,8 @@ header {
 .temaer img {
   border-radius: var(--kanter);
   filter: grayscale(1) opacity(0.7);
-  margin: 1rem 3rem 1rem 0rem;
   width: 100%;
   margin: 1rem auto 1rem auto;
-}
-
-.temaer .introuge,
-.temaer .emnesite,
-.temaer .animation {
-  width: 80%;
 }
 
 /* Billede hover funktion */
@@ -474,7 +470,7 @@ header {
   cursor: pointer;
 }
 /* Farveskift på text-overlay */
-.temaer .image-container:hover h2 {
+.image-container:hover h2 {
   transition: var(--transitionslow);
   cursor: pointer;
   color: var(--farve5);
@@ -482,7 +478,8 @@ header {
 
 .image-container {
   position: relative;
-  width: 90%;
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .overlay-text {
@@ -491,6 +488,13 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.emnesite,
+.animation,
+.introuge {
+  aspect-ratio: 12/16;
+  max-width: 450px;
 }
 
 footer h2,
@@ -514,9 +518,200 @@ footer h2 {
   text-align: center;
 }
 
+/* Socials */
+#snapchat {
+  font-size: 7.5rem;
+  padding: 1rem;
+}
+
+.socialsh6 {
+  text-align: center;
+  padding: 1rem;
+}
+
 @media (max-width: 500px) {
+  h1 {
+    font-size: 4rem; /* 64px */
+  }
+  h2 {
+    font-size: 3rem; /* 48px */
+  }
+  h3 {
+    font-size: 2.5rem; /* 40px */
+  }
+  h4 {
+    font-size: 2rem; /* 32px */
+  }
+  h5 {
+    font-size: 1.5rem; /* 24px */
+  }
+  h6 {
+    font-size: 1.25rem; /* 20px */
+  }
+  p {
+    font-size: 1rem; /* 16px */
+  }
+  a {
+    font-size: 1rem; /* 16px */
+  }
+  .grid_1-1 {
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .grid_1-1 img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .grid_1-1 p {
+    padding: 1rem;
+  }
+
   .toolbox_1-1 {
     grid-template-columns: 1fr;
+  }
+
+  .toolboxoverskrift {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .lightmode #ommig {
+    border-radius: 1rem;
+  }
+
+  /* 3d */
+  .tredtext {
+    width: 150px;
+    font-size: 1rem;
+    left: -42%;
+    top: 10%;
+  }
+
+  #tool1 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool1 h2 {
+    position: relative;
+    left: 20%;
+    top: 50%;
+    font-size: 3rem;
+  }
+
+  .tredtext {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 20%;
+    top: -180%;
+  }
+
+  /*Design  */
+  #tool2 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool2 h2 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-size: 3rem;
+  }
+
+  .designtext {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 20%;
+    top: -180%;
+  }
+
+  /* Filhåndtering */
+  #tool3 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool3 h2 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-size: 3rem;
+  }
+
+  .filtext {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 20%;
+    top: 100%;
+  }
+  /* kode */
+  #tool4 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool4 h2 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-size: 3rem;
+  }
+
+  .kodetext {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 20%;
+    top: 100%;
+  }
+
+  .cv_1-1-1 {
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+  }
+
+  .cv_1-1-1 svg {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 1200px;
+  }
+
+  .cv_1-1-1 .ud {
+    text-align: right;
+  }
+
+  .cv_1-1-1 .udliste h4 {
+    text-align: right;
+    margin-top: 5rem;
+  }
+
+  .image-container img {
+    border-radius: 1rem;
+  }
+  .image-container h2 {
+    font-size: 2rem;
+  }
+
+  .footergrid_1-1-1 {
+    gap: 1rem;
+  }
+
+  .footergrid_1-1-1 h5 {
+    font-size: 1rem;
+    text-align: left;
   }
 }
 
@@ -552,20 +747,30 @@ footer h2 {
 
   /* OM MIG */
   .grid_1-1 {
-    grid-template-columns: 1fr 1fr; /* 2 kolonner, én til tekst og én til billede */
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
 
   .grid_1-1 h1 {
-    grid-column: 1 / span 2; /* Sørg for at overskriften fylder begge kolonner */
+    grid-column: 1 / span 2;
   }
 
   .grid_1-1 p {
-    grid-column: 1; /* Teksten fylder kun første kolonne */
+    grid-column: 1;
     grid-row: 2;
   }
 
+  /* Værktøjskasse */
+  .designtext {
+    left: -50%;
+    top: -20;
+  }
+
   /* ARBEJDE */
+  .temaer img {
+    margin: 0;
+  }
+
   /* Temavenstre */
   .temavenstre,
   .temahojre {
@@ -590,16 +795,23 @@ footer h2 {
 
   #forste {
     grid-row: 3;
+    justify-self: end;
   }
 
   #anden {
     grid-row: 4;
+    justify-self: end;
+  }
+
+  .temavenstre {
+    padding-left: 1rem;
   }
 
   /* temahøjre */
   .temahojre h3,
   .temahojre h4 {
     grid-column: 1;
+    padding-left: 1rem;
   }
 
   .temahojre p {
