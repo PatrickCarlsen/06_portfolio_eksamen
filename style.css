@@ -31,6 +31,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Lightmode */
 .lightmode {
   background-color: var(--farve4);
 }
@@ -83,15 +84,7 @@ body {
   color: var(--farve5);
 }
 
-#ommig {
-  margin: 0 3rem 0 3rem;
-  padding: 0 1rem 1rem 1rem;
-}
-
-#ommig p {
-  margin: auto;
-}
-
+/* Fonts deligeret og skriftstørrelse */
 h1,
 h2,
 h3,
@@ -149,6 +142,7 @@ p {
   color: var(--farve5);
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -165,6 +159,7 @@ header {
   background: 0;
 }
 
+/* Logo */
 .logo {
   margin-left: 2.5rem;
   color: var(--farve2);
@@ -174,6 +169,7 @@ header {
   color: var(--farve3);
 }
 
+/* logo hover */
 .logo:hover h6 {
   color: var(--farve5);
   cursor: pointer;
@@ -184,6 +180,7 @@ header {
   text-decoration: none;
 }
 
+/* Darkmode/lightmode switch */
 #switch {
   width: 50%;
   text-align: center;
@@ -193,6 +190,7 @@ header {
   cursor: pointer;
 }
 
+/* Menu */
 .menu {
   text-align: right;
   padding: 0rem 2rem 0rem 2.5rem;
@@ -203,6 +201,7 @@ header {
   color: var(--farve2);
 }
 
+/* Lightmode menu styling */
 .lightmode .menu a {
   color: var(--farve3);
 }
@@ -213,6 +212,7 @@ header {
   transition: var(--transitionfast);
 }
 
+/* Hero + første 2 overskrifter*/
 .hero {
   position: relative;
   z-index: -1;
@@ -225,7 +225,7 @@ header {
 
 #ide2 {
   margin: 0 5rem 0 3rem;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 /* om mig */
@@ -251,6 +251,15 @@ header {
 
 .grid_1-1 h1 {
   text-align: center;
+}
+
+#ommig {
+  margin: 0 3rem 0 3rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+#ommig p {
+  margin: auto;
 }
 
 /* Værktøjskassen */
@@ -337,7 +346,6 @@ header {
   border-radius: 6px;
   padding: 0.2rem;
   font-size: 1.5rem;
-  /* Placering af kassen */
   top: 80%;
   left: -80%;
   position: absolute;
@@ -437,6 +445,7 @@ header {
   visibility: visible;
 }
 
+/* Sektionsdeler */
 #rejsen {
   text-align: center;
   margin: 0rem 1.5rem 4rem 1.5rem;
@@ -469,6 +478,7 @@ header {
 .arbejdeoverskrift {
   text-align: center;
   margin: 5rem 0rem 5rem 0rem;
+  padding: 1rem;
 }
 .temaer {
   display: grid;
@@ -514,6 +524,7 @@ header {
   text-align: center;
 }
 
+/* Lodrette billeder får samme aspect ration og max-width */
 .emnesite,
 .animation,
 .introuge {
@@ -521,6 +532,7 @@ header {
   max-width: 450px;
 }
 
+/* Footer */
 footer h2,
 footer h3 {
   text-align: center;
@@ -536,13 +548,14 @@ footer h2 {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   padding: 1rem 5rem 1rem 5rem;
+  gap: 1rem;
 }
 
 .footergrid_1-1-1 a {
   text-align: center;
 }
 
-/* Socials */
+/* Socials + Snapchat */
 #snapchat {
   font-size: 4rem;
   text-align: center;
@@ -554,177 +567,25 @@ footer h2 {
   padding: 1rem;
 }
 
-@media (max-width: 500px) {
-  h1 {
-    font-size: 4rem; /* 64px */
-  }
-  h2 {
-    font-size: 3rem; /* 48px */
-  }
-  h3 {
-    font-size: 2.5rem; /* 40px */
-  }
-  h4 {
-    font-size: 2rem; /* 32px */
-  }
-  h5 {
-    font-size: 1.5rem; /* 24px */
-  }
-  h6 {
-    font-size: 1.25rem; /* 20px */
-  }
-  p {
-    font-size: 1rem; /* 16px */
-  }
-  a {
-    font-size: 1rem; /* 16px */
-  }
-  .grid_1-1 {
-    justify-content: center;
-    padding-left: 1rem;
-  }
-  .grid_1-1 img {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .grid_1-1 p {
-    padding: 1rem;
-  }
-
-  .toolbox_1-1 {
-    grid-template-columns: 1fr;
-  }
-
-  .toolboxoverskrift {
-    text-align: left;
-    font-size: 2rem;
-  }
-
-  .lightmode #ommig {
-    border-radius: 1rem;
-  }
-
-  /* 3d */
-  .tredtext {
-    width: 150px;
-    font-size: 1rem;
-    left: -42%;
-    top: 10%;
-  }
-
-  #tool1 img {
-    position: relative;
-    left: -10%;
-    top: -20%;
-  }
-
-  #tool1 h2 {
-    position: relative;
-    left: 20%;
-    top: 50%;
-    font-size: 3rem;
-  }
-
-  .tredtext {
-    width: 150px;
-    font-size: 1rem;
-    border-radius: 6px;
-    padding: 0.2rem;
-    left: 20%;
-    top: -180%;
-  }
-
-  /*Design  */
-  #tool2 img {
-    position: relative;
-    left: -10%;
-    top: -20%;
-  }
-
-  #tool2 h2 {
-    position: relative;
-    left: 0%;
-    top: 0%;
-    font-size: 3rem;
-  }
-
-  .designtext {
-    width: 150px;
-    font-size: 1rem;
-    border-radius: 6px;
-    padding: 0.2rem;
-    left: 20%;
-    top: -180%;
-  }
-
-  /* Filhåndtering */
-  #tool3 img {
-    position: relative;
-    left: -10%;
-    top: -20%;
-  }
-
-  #tool3 h2 {
-    position: relative;
-    left: 0%;
-    top: 0%;
-    font-size: 3rem;
-  }
-
-  .filtext {
-    width: 150px;
-    font-size: 1rem;
-    border-radius: 6px;
-    padding: 0.2rem;
-    left: 20%;
-    top: 100%;
-  }
-  /* kode */
-  #tool4 img {
-    position: relative;
-    left: -10%;
-    top: -20%;
-  }
-
-  #tool4 h2 {
-    position: relative;
-    left: 0%;
-    top: 0%;
-    font-size: 3rem;
-  }
-
-  .kodetext {
-    width: 150px;
-    font-size: 1rem;
-    border-radius: 6px;
-    padding: 0.2rem;
-    left: 20%;
-    top: 100%;
-  }
-
-  .image-container img {
-    border-radius: 1rem;
-  }
-  .image-container h2 {
-    font-size: 2rem;
-  }
-
-  .footergrid_1-1-1 {
-    gap: 1rem;
-  }
-
-  .footergrid_1-1-1 h5 {
-    font-size: 1rem;
-    text-align: left;
-  }
-
-  #snapchat {
-    font-size: 3rem;
-  }
-}
-
+/* /* Media query for skræme op til 650px */
 @media (max-width: 650px) {
+  #ide {
+    font-size: 2rem;
+  }
+  #ide2 {
+    font-size: 2.5rem;
+  }
+
+  /* Layoutændring i om mig sektioneen */
+  .grid_1-1 h1 {
+    grid-column: 1 / span 2;
+  }
+
+  .grid_1-1 img {
+    grid-column: 1 / span 2;
+    width: 50%;
+  }
+
   /* værktøjskassen */
   .toolbox_1-1 {
     grid-template-columns: 1fr;
@@ -767,7 +628,7 @@ footer h2 {
   }
 
   .filtext {
-    width: 300px;
+    width: 200px;
   }
 
   /* Kode  */
@@ -786,6 +647,7 @@ footer h2 {
     left: 0%;
   }
 
+  /* CV latout ændring */
   .cv_1-1-1 {
     grid-template-columns: 1fr auto;
     justify-content: center;
@@ -805,9 +667,180 @@ footer h2 {
     text-align: right;
     margin-top: 5rem;
   }
+
+  /* Ændring af skriftstørrelse på tekst over billeder */
+  .image-container h2 {
+    font-size: 4rem;
+  }
 }
 
+/* /* Media query for skræme under 500px */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem; /* 64px */
+  }
+  h2 {
+    font-size: 3rem; /* 48px */
+  }
+  h3 {
+    font-size: 2.5rem; /* 40px */
+  }
+  h4 {
+    font-size: 2rem; /* 32px */
+  }
+  h5 {
+    font-size: 1.5rem; /* 24px */
+  }
+  h6 {
+    font-size: 1.25rem; /* 20px */
+  }
+  p {
+    font-size: 1rem; /* 16px */
+  }
+  a {
+    font-size: 1rem; /* 16px */
+  }
+
+  #ide2 {
+    font-size: 1rem;
+  }
+
+  /* Om mig */
+  .grid_1-1 {
+    margin: 1rem;
+  }
+  .grid_1-1 p {
+    padding: 1rem;
+  }
+
+  .lightmode #ommig {
+    border-radius: 1rem;
+  }
+
+  /* Værktøjskassen */
+  .toolbox_1-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .toolboxoverskrift {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  /* 3d */
+  #tool1 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool1 h2 {
+    position: relative;
+    left: 20%;
+    top: 50%;
+    font-size: 3rem;
+  }
+
+  .tredtext {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 20%;
+    top: -10%;
+  }
+
+  /*Design  */
+  #tool2 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool2 h2 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-size: 3rem;
+  }
+
+  .designtext {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 0%;
+    top: 90%;
+  }
+
+  /* Filhåndtering */
+  #tool3 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool3 h2 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-size: 3rem;
+  }
+
+  .filtext {
+    width: 120px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 20%;
+    top: 100%;
+  }
+  /* kode */
+  #tool4 img {
+    position: relative;
+    left: -10%;
+    top: -20%;
+  }
+
+  #tool4 h2 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    font-size: 3rem;
+  }
+
+  .kodetext {
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.2rem;
+    left: 20%;
+    top: 100%;
+  }
+
+  /* Ændring af layout på billeds-container */
+  .image-container img {
+    border-radius: 2rem;
+  }
+  .image-container h2 {
+    font-size: 2.5rem;
+  }
+
+  /* footer */
+  .footergrid_1-1-1 h5 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /* Størrelse på H1 */
+  #snapchat {
+    font-size: 3rem;
+  }
+}
+
+/* Media query for skræme over 800px */
 @media (min-width: 800px) {
+  /* Default tekststørrelse */
   h1 {
     font-size: 8.5rem; /* 136px */
   }
@@ -833,8 +866,9 @@ footer h2 {
     font-size: 1.6875rem; /* 27px */
   }
 
-  .image-container h2 {
-    font-size: 3rem;
+  /* Ændring af størrelse på Darkmode/lightmode switch */
+  #switch {
+    width: 15%;
   }
 
   /* OM MIG */
@@ -858,12 +892,17 @@ footer h2 {
     top: 20%;
   }
 
+  .kodetext {
+    top: 10%;
+    left: -55%;
+  }
+
   /* ARBEJDE */
   .temaer img {
     margin: 1;
   }
 
-  /* Temavenstre */
+  /* Temavenstre layout */
   .temavenstre,
   .temahojre {
     display: grid;
@@ -885,6 +924,11 @@ footer h2 {
     grid-row: 3;
   }
 
+  .temavenstre {
+    padding-left: 1rem;
+  }
+
+  /* layout Forste og Anden billeder på tema 5 */
   #forste {
     grid-row: 3;
     justify-self: end;
@@ -893,10 +937,6 @@ footer h2 {
   #anden {
     grid-row: 4;
     justify-self: end;
-  }
-
-  .temavenstre {
-    padding-left: 1rem;
   }
 
   /* temahøjre */
@@ -910,19 +950,17 @@ footer h2 {
     grid-column: 2;
     grid-row: 3 / span 4;
   }
+
   .temahojre .image-container {
     grid-column: 1;
   }
 
-  #switch {
-    width: 15%;
+  /* Tekst over billeder på image-container */
+  .image-container h2 {
+    font-size: 3rem;
   }
 
-  .kodetext {
-    top: 10%;
-    left: -55%;
-  }
-
+  /* Størrelse på h1 */
   #snapchat {
     font-size: 6rem;
   }
